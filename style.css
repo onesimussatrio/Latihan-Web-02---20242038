@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 8px;
+    color: #333;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Kotak form */
+.form-container {
+    width: 380px;
+    height: 235px;
+    border: 3px ridge #aaa;
+    background-color: #c25555;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Tabel form */
+table {
+    border-spacing: 3px;
+    font-size: 14px;
+}
+
+td {
+    padding: 2px;
+    vertical-align: middle;
+}
+
+/* Input */
+input {
+    box-sizing: border-box;
+    height: 21px;
+    width: 245px;
+    font-family: monospace;
+    font-size: 13px;
+    padding: 2px;
+}
+
+/* Input postcode */
+#postcode {
+    width: 145px;
+}
+
+/* Textarea alamat */
+textarea {
+    font-family: monospace;
+    font-size: 13px;
+    resize: both;
+    width: 205px;
+    height: 74px;
+    padding: 2px;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 450px) {
+    .form-container {
+        max-width: calc(100vw - 46px);
+    }
+
+    input {
+        max-width: 100%;
+    }
+}
